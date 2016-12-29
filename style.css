@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: blue;
+  font-family: "Proxima Nova", Helvetica, sans-serif;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  width: 70%;
+  margin: 30px auto;
+}
+
+/* Input/Output Boxes */
+
+.tempBox {
+  width: 70%;
+  position: relative;
+  float: left;
+}
+
+.output, input {
+  padding: 10px;
+  height: 50px;
+}
+
+.tempBox:after {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid blue;
+}
+
+.input:after {
+  content: "C";
+}
+
+.fromFahrenheit .input:after {
+  content: "F";
+}
+
+.output {
+  border: 2px solid #ddd;
+  background: #ddd;
+}
+
+.output:after {
+  content: "F";
+}
+
+.fromFahrenheit .output:after {
+  content: "C";
+}
+
+/* Buttons */
+
+button {
+  width: 28%;
+  margin-left: 2%;
+  float: left;
+  padding: 18px 0;
+  border-radius: 10px;
+  border: 0;
+  transition: all 1s;
+}
+
+button:hover {
+  background: green;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+}
+
+
+/* Helper */
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
