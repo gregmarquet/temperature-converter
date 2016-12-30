@@ -60,6 +60,12 @@ function switchConvert() {
   $('body').toggleClass('fromFahrenheit');
   }
 
+// get the #convert button to respond to the enter key
+$("#tempIn").keyup(function(event){
+    if(event.keyCode == 13){
+        $("#convert").click();
+    }
+});
 
 
 
